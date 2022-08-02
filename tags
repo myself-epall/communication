@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_EVENTS	./epoll_server.c	13;"	d	file:
+ONLINE_MAX	./epoll_server.c	47;"	d	file:
+Port	./epoll_server.c	12;"	d	file:
+Users	./epoll_server.c	/^user_msg Users[MAX_EVENTS];    \/\/ 已注册的所有用户信息$/;"	v
+arg	./epoll_server.c	/^    void *arg;                  \/\/ 上面回调函数的参3$/;"	m	struct:myevent_s	file:
+buf	./epoll_server.c	/^    char buf[BUFSIZ];           \/\/ 读写缓冲区$/;"	m	struct:myevent_s	file:
+call_back	./epoll_server.c	/^typedef void (*call_back)(int, void*); $/;"	t	file:
+cb_accept	./epoll_server.c	/^void cb_accept(int lfd, void * arg)$/;"	f
+cb_read	./epoll_server.c	/^void cb_read(int cfd, void *arg)$/;"	f
+cb_write	./epoll_server.c	/^void cb_write(int cfd, void *arg)$/;"	f
+close_cfd	./epoll_server.c	/^void close_cfd(int cfd, myevent_s *ev)$/;"	f
+event_add	./epoll_server.c	/^void event_add(int epfd, myevent_s *ev)$/;"	f
+event_del	./epoll_server.c	/^void event_del(int epfd, myevent_s *ev)$/;"	f
+event_set	./epoll_server.c	/^void event_set(myevent_s *ev, int fd, int events, call_back fun, void *arg3)$/;"	f
+events	./epoll_server.c	/^    int events;                 \/\/ 对应监听的事件 EPOLLIN \/ EPOLLOUT$/;"	m	struct:myevent_s	file:
+fd	./epoll_server.c	/^    int fd;                     \/\/ 监听的文件描述符$/;"	m	struct:myevent_s	file:
+fd_pos	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+fun	./epoll_server.c	/^    call_back fun;              \/\/ 回调函数$/;"	m	struct:myevent_s	file:
+g_efd	./epoll_server.c	/^int g_efd;                           \/\/ 监听红黑树的树根$/;"	v
+g_events	./epoll_server.c	/^myevent_s g_events[MAX_EVENTS + 1];  \/\/ 用于保存每个文件描述符信息的结构体的数组$/;"	v
+get_uid	./epoll_server.c	/^void get_uid(myevent_s *ev)$/;"	f
+idx	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+l	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+last_active_time	./epoll_server.c	/^    long long last_active_time; \/\/ 该文件描述符最后在监听红黑树上的活跃时间$/;"	m	struct:myevent_s	file:
+len	./epoll_server.c	/^    int len;                    \/\/ 本次从客户端读入缓冲区数据的长度$/;"	m	struct:myevent_s	file:
+list_del	./epoll_server.c	/^void list_del(int fd)                     \/\/ 在线链表中删除fd的文件描述符$/;"	f
+list_init	./epoll_server.c	/^void list_init()$/;"	f
+list_push	./epoll_server.c	/^void list_push(int fd)$/;"	f
+load_usermsg	./epoll_server.c	/^void load_usermsg()                 $/;"	f
+log_step	./epoll_server.c	/^    int log_step;               \/\/ 标记用户位于登陆的操作 0-- 未登陆  1 --- 输入账号  2 ---- 输入密码   3----- 成功登陆  4 --- 注册用户名  5 ------ 输入注册的密码   6 ------- 再次输入密码验证$/;"	m	struct:myevent_s	file:
+login	./epoll_server.c	/^void login(int cfd, void *arg)$/;"	f
+login_menu	./epoll_server.c	/^void login_menu(int cfd , void* arg)$/;"	f
+logout	./epoll_server.c	/^void logout(int cfd, void *arg)$/;"	f
+main	./01client.c	/^int main(int argc, char *argv[])$/;"	f
+main	./epoll_server.c	/^int main(int argc, char *argv[])$/;"	f
+ms1	./epoll_server.c	/^char ms1[] = "与服务器建立连接, 开始进行数据通信 ------ [OK]\\n"$/;"	v
+myevent_s	./epoll_server.c	/^typedef struct myevent_s       $/;"	s	file:
+myevent_s	./epoll_server.c	/^}myevent_s;$/;"	t	typeref:struct:myevent_s	file:
+online_fd	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+online_num	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+r	./epoll_server.c	/^int online_fd[ONLINE_MAX], l[ONLINE_MAX], r[ONLINE_MAX], fd_pos[ONLINE_MAX], idx, online_num;$/;"	v
+register_id	./epoll_server.c	/^void register_id(int cfd, void *arg)$/;"	f
+src	./makefile	/^src = $(wildcard *.c)$/;"	m
+st	./epoll_server.c	/^    int  st;                   \/\/ 是否在线 0---- 离线     1---- 在线$/;"	m	struct:user	file:
+status	./epoll_server.c	/^    int status;                 \/\/ 是否在监听红黑树上, 1 --- 在, 0 --- 不在$/;"	m	struct:myevent_s	file:
+sys_error	./01client.c	/^void sys_error(const char *str) $/;"	f
+sys_error	./epoll_server.c	/^void sys_error(const char *str) $/;"	f
+target	./makefile	/^target = $(patsubst %.c, %, $(src))$/;"	m
+um	./epoll_server.c	/^    user_msg um;                \/\/ 用户登陆的信息$/;"	m	struct:myevent_s	file:
+user	./epoll_server.c	/^typedef struct user$/;"	s	file:
+user_msg	./epoll_server.c	/^}user_msg;$/;"	t	typeref:struct:user	file:
+user_num	./epoll_server.c	/^int user_num;                  \/\/ 已注册用户信息的数量$/;"	v
+usr_id	./epoll_server.c	/^    char usr_id[8];            \/\/ 用户ID    五位 UID$/;"	m	struct:user	file:
+usr_key	./epoll_server.c	/^    char usr_key[40];          \/\/ 用户密码$/;"	m	struct:user	file:
+usr_name	./epoll_server.c	/^    char usr_name[256];        \/\/ 用户名$/;"	m	struct:user	file:

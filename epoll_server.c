@@ -12,7 +12,7 @@
 #define Port 7777
 #define MAX_EVENTS 1024
 typedef void (*call_back)(int, void*); 
-//
+//再也不能再远端进行修改了
 // 登陆用户信息
 typedef struct user
 {
